@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intuitive Quiz Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">INTUITIVE QUIZ HUB</h1>
+    <div class="quiz-section" id="quizSection">
+      <div class="settings">
+        <h2>Quiz Settings</h2>
+        <input type="text" placeholder="Enter Your Name" id="name" autocomplete="off"/>
+        <select id="category">
+          <option value="" disabled selected>Select Category</option>
+          <option value="general">General Knowledge</option>
+          <option value="science">Science</option>
+          <option value="math">Math</option>
+          <option value="computers">Computers</option>
+  <option value="history">History</option>
+  <option value="geography">Geography</option>
+  <option value="sports">Sports</option>
+  <option value="books">Books</option>
+  <option value="films">Films</option>
+  <option value="music">Music</option>
+  <option value="politics">Politics</option>
+  <option value="art">Art</option>
+  <option value="celebrities">Celebrities</option>
+  <option value="animals">Animals</option>
+  <option value="vehicles">Vehicles</option>
+  <option value="mythology">Mythology</option>
+  <option value="anime">Anime & Manga</option>
+  <option value="gadgets">Gadgets</option>
+  <option value="comics">Comics</option>
+  <option value="boardgames">Board Games</option>
+        </select>
+        <select id="difficulty">
+          <option value="" disabled selected>Select Difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <button id="startButton">START QUIZ</button>
+      </div>
+      <div class="image">
+        <img src="quiz.svg" alt="Quiz Illustration" />
+      </div>
+    </div>
+    <div id="questionScreen" class="question-screen" hidden >
+      <div class="info">
+        <p id="categoryDisplay"></p>
+        <p id="scoreDisplay">Score: 0</p>
+      </div>
+      <h2 id="welcomeMsg"></h2>
+      <h3 id="questionNum">Question 1 :</h3>
+      <div class="question-box">
+        <p id="questionText"></p>
+        <div id="options" class="options-grid"></div>
+      </div>
+      <div class="btn-group">
+        <button class="btn quit" id="quitBtn">QUIT</button>
+        <button class="btn next"id="nextBtn">NEXT QUESTION</button>
+        <button id="homeBtn">GO TO HOMEPAGE</button>
+
+      </div>
+    </div>
+  </div>
+    <div class="name">
+        <h3>Made with ❤️ by Priyanshi Khandelwal</h3>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
