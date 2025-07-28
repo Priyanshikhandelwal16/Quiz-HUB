@@ -24,7 +24,7 @@ async function fetchQuestions(category, difficulty) {
   general: 9,
   science: 17,
   math: 19,
-  computer: 18,
+  computers: 18,
   history: 23,
   sports: 21,
   geography: 22,
