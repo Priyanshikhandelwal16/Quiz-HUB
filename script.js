@@ -20,11 +20,10 @@ let currentIndex = 0
 let score = 0
 
 async function fetchQuestions(category, difficulty) {
-  const categoryMap = {
+ const categoryMap = {
   general: 9,
   science: 17,
   math: 19,
-  computers: 18,
   history: 23,
   sports: 21,
   geography: 22,
@@ -39,8 +38,7 @@ async function fetchQuestions(category, difficulty) {
   mythology: 20,
   anime: 31,
   gadgets: 30,
-  comics: 29,
-  boardgames: 16
+  comics: 29
 };
 
   const categoryId = categoryMap[category];
